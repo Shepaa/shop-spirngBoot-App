@@ -2,13 +2,15 @@
 
 # Run
 
-## 1. Preparing
+## Running Instructions
 
-- **Install Java**. Application is running on Java JDK 17.
-  To make sure that you are using the correct version - `java -version`. Install for [Windows][1].
-- **Install Docker**. For [Windows][3].
-- After you must go root file of project and follow the path: src->main->resources.
-  There you will see the apl.yaml file and in it you need the url line: jdbc:mysql://${DB_HOST:localhost}:
+### Step 1: Setup
+
+- **Java Installation**: Make sure you have Java JDK 17 installed. Confirm your Java version with `java -version`.
+  Install it for [Windows][1].
+- **Docker Installation**: Install Docker for [Windows][3]..
+- Navigate to the root directory of the project. Find the path: `src->main->resources`.
+  Inside the `apl.yaml` file, locate the `url` line:  jdbc:mysql://${DB_HOST:localhost}:
   3306/${DB_NAME:ProductstoreDB}
   change 3306 to 3307
 
